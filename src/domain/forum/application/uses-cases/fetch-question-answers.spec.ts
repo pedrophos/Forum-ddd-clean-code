@@ -1,6 +1,3 @@
-import { InMemoryQuestionsRepository } from 'test/repositorys/in-memory-questions-repository'
-import { makeQuestion } from 'test/factories/make-question'
-import { FetchRecentQuestionsUseCase } from './fetch-recent-questions'
 import { InMemoryAnswersRepository } from 'test/repositorys/in-memory-answers-repository'
 import { FetchQuestionAnswersUseCase } from './fetch-questions-answers'
 import { makeAnswer } from 'test/factories/make-answer'
