@@ -5,7 +5,7 @@ import { FetchRecentQuestionsUseCase } from './fetch-recent-questions'
 let inMemoryQuestionRepository: InMemoryQuestionsRepository
 let sut: FetchRecentQuestionsUseCase
 
-describe('Get Question By Slug', () => {
+describe('Get recent questions', () => {
   beforeEach(() => {
     inMemoryQuestionRepository = new InMemoryQuestionsRepository()
     sut = new FetchRecentQuestionsUseCase(inMemoryQuestionRepository)
