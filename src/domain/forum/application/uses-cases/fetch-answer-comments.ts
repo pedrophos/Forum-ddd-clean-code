@@ -1,5 +1,5 @@
 import { AnswerComment } from '../../enterprise/entities/answer-comment'
-import { AnswersCommentsRepository } from '../repositories/answer-comment-repository'
+import { AnswersCommentsRepository } from '../repositories/answer-comments-repository'
 
 interface FetchAnswerCommentsUseCaseRequest {
   answerId: string
