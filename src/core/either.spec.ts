@@ -1,4 +1,3 @@
-import exp from 'constants'
 import { Either, left, right } from './either'
 
 function doSomething(shouldSucess: boolean): Either<string, number> {
