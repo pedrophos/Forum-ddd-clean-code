@@ -9,4 +9,16 @@ export class InMemoryNotificationsRepository
   async create(notification: Notification) {
     this.items.push(notification)
   }
+
+  async findById(id: string) {
+    return this.items.find((item) => item.id.toString() === id) ?? null
+  }
+
+  async save(notification: Notification) {
+    const itemIndex = this.items.findIndex(
+      (item) => item.id === notification.id,
+    )
+
+    this.items[itemIndex] = notification
+  }
 }

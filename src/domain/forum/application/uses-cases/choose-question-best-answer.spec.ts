@@ -4,9 +4,11 @@ import { makeAnswer } from 'test/factories/make-answer'
 import { InMemoryQuestionsRepository } from 'test/repositorys/in-memory-questions-repository'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer'
 import { makeQuestion } from 'test/factories/make-question'
-import { NotAllowedError } from './errors/not-allowed-error'
 import { InMemoryAnswerAttachmentsRepository } from 'test/repositorys/in-memory-answer-attachment-repository'
 import { InMemoryQuestionAttachmentsRepository } from 'test/repositorys/in-memory-question-attachment-repository'
+import { NotAllowedError } from '@/core/errors/errors/not-allowed-error'
+
+// import { NotAllowedError } from '@/core/errors/errors/not-allowed-error'
 
 let inMemoryQuestionRepository: InMemoryQuestionsRepository
 let inMemoryAnswerAttachmentsRepository: InMemoryAnswerAttachmentsRepository
